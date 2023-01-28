@@ -11,23 +11,24 @@
 body {
     background: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
     background-attachment: fixed;
+    min-height: 520px;
 }
 
-.shift {
+/* .shift {
     position: relative;
     top: 24vh;
-}
+}*/
 
 .signup {
-    width: 25vw;
+    width: 25%;
     height: 80vh;
     background-color: white;
     margin: 10vh auto;
     border-radius: 28px;
 }
 
-.signup h2 {
-    padding: 10px;
+/*.signup h2 {
+    padding: 0.6rem;
     text-align: center;
 }
 
@@ -37,9 +38,9 @@ input {
     height: 2.4em;
     border-radius: 28px;
     border: 2px solid #bbb;
-    margin: 20px auto;
+    margin: 5% auto;
     font-size: 18px;
-    padding: 20px;
+    padding-left: 1.5rem;
 }
 
 input:hover {
@@ -65,10 +66,18 @@ button {
 
 button:hover {
     border: 2px solid white;
+} */
+
+/*------------------------*/
+
+.move-right {
+    right: 12.5%;
 }
 
-span {
-    display: block;
-    text-align: center;
-    color: #555;
+.move-left {
+    left: 12.5%;
+}
+
+.span {
+    bottom: 10%;
 }

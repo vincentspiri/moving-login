@@ -5,20 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="./styles.css">
 
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="move.js"></script>
 </head>
 <body>
-    <section class="signup">
-        <h2 class="shift">Create Account</h2>
-        <form>
-            <input class="shift" type="text" id="username" placeholder="Name">
-            <input class="shift" type="email" id="email" placeholder="Email">
-            <input class="shift" type="password" id="password" placeholder="Password">
-            <button class="shift" id="signup">SIGN UP</button>
-        </form>
-        <span class="shift">Already have an account?</span>
-        <span class="shift">Sign in <a href="./login.html">Here</a></span>
+    <section>
+        <div class="signup position-relative py-5">
+            <h3 class="text-center my-5">Create Account</h3>
+            <div class="input-group input-group-lg flex-nowrap w-75 mx-auto my-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group input-group-lg flex-nowrap w-75 mx-auto my-3">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group input-group-lg flex-nowrap w-75 mx-auto my-3">
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+            </div>
+            <button type="button" id="signup" class="btn btn-primary btn-lg position-absolute start-50 translate-middle-x">SIGN UP</button>
+            <p class="text-center my-5 py-5">Already have an account?
+                <br>Sign in <a href="./login.html">Here</a></p>
+        </div>
     </section>
 </body>
 </html>
